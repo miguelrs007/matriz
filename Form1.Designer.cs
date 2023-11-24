@@ -38,6 +38,17 @@
             this.cARGARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dESCARGARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oRDENARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tRANSPUESTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cARGAR1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cARGAR2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pROMEDIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mAYORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fRECUENCIAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.mENU2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dESCARGARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bUSQSECUENCIALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tODOIGUALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,13 +85,14 @@
             this.textBox5.Location = new System.Drawing.Point(12, 100);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(289, 148);
+            this.textBox5.Size = new System.Drawing.Size(318, 123);
             this.textBox5.TabIndex = 4;
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mENUToolStripMenuItem});
+            this.mENUToolStripMenuItem,
+            this.mENU2ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(516, 24);
@@ -92,7 +104,15 @@
             this.mENUToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cARGARToolStripMenuItem,
             this.dESCARGARToolStripMenuItem,
-            this.oRDENARToolStripMenuItem});
+            this.oRDENARToolStripMenuItem,
+            this.tRANSPUESTAToolStripMenuItem,
+            this.cARGAR1ToolStripMenuItem,
+            this.cARGAR2ToolStripMenuItem,
+            this.pROMEDIOToolStripMenuItem,
+            this.mAYORToolStripMenuItem,
+            this.fRECUENCIAToolStripMenuItem,
+            this.bUSQSECUENCIALToolStripMenuItem,
+            this.tODOIGUALToolStripMenuItem});
             this.mENUToolStripMenuItem.Name = "mENUToolStripMenuItem";
             this.mENUToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.mENUToolStripMenuItem.Text = "MENU";
@@ -116,12 +136,92 @@
             this.oRDENARToolStripMenuItem.Name = "oRDENARToolStripMenuItem";
             this.oRDENARToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.oRDENARToolStripMenuItem.Text = "ORDENAR";
+            this.oRDENARToolStripMenuItem.Click += new System.EventHandler(this.oRDENARToolStripMenuItem_Click);
+            // 
+            // tRANSPUESTAToolStripMenuItem
+            // 
+            this.tRANSPUESTAToolStripMenuItem.Name = "tRANSPUESTAToolStripMenuItem";
+            this.tRANSPUESTAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tRANSPUESTAToolStripMenuItem.Text = "TRANSPUESTA";
+            this.tRANSPUESTAToolStripMenuItem.Click += new System.EventHandler(this.tRANSPUESTAToolStripMenuItem_Click);
+            // 
+            // cARGAR1ToolStripMenuItem
+            // 
+            this.cARGAR1ToolStripMenuItem.Name = "cARGAR1ToolStripMenuItem";
+            this.cARGAR1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cARGAR1ToolStripMenuItem.Text = "CARGAR1";
+            this.cARGAR1ToolStripMenuItem.Click += new System.EventHandler(this.cARGAR1ToolStripMenuItem_Click);
+            // 
+            // cARGAR2ToolStripMenuItem
+            // 
+            this.cARGAR2ToolStripMenuItem.Name = "cARGAR2ToolStripMenuItem";
+            this.cARGAR2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cARGAR2ToolStripMenuItem.Text = "CARGAR2";
+            this.cARGAR2ToolStripMenuItem.Click += new System.EventHandler(this.cARGAR2ToolStripMenuItem_Click);
+            // 
+            // pROMEDIOToolStripMenuItem
+            // 
+            this.pROMEDIOToolStripMenuItem.Name = "pROMEDIOToolStripMenuItem";
+            this.pROMEDIOToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pROMEDIOToolStripMenuItem.Text = "PROMEDIO";
+            this.pROMEDIOToolStripMenuItem.Click += new System.EventHandler(this.pROMEDIOToolStripMenuItem_Click);
+            // 
+            // mAYORToolStripMenuItem
+            // 
+            this.mAYORToolStripMenuItem.Name = "mAYORToolStripMenuItem";
+            this.mAYORToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mAYORToolStripMenuItem.Text = "MAYOR";
+            this.mAYORToolStripMenuItem.Click += new System.EventHandler(this.mAYORToolStripMenuItem_Click);
+            // 
+            // fRECUENCIAToolStripMenuItem
+            // 
+            this.fRECUENCIAToolStripMenuItem.Name = "fRECUENCIAToolStripMenuItem";
+            this.fRECUENCIAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fRECUENCIAToolStripMenuItem.Text = "FRECUENCIA";
+            this.fRECUENCIAToolStripMenuItem.Click += new System.EventHandler(this.fRECUENCIAToolStripMenuItem_Click);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(12, 241);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(82, 20);
+            this.textBox6.TabIndex = 6;
+            // 
+            // mENU2ToolStripMenuItem
+            // 
+            this.mENU2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dESCARGARToolStripMenuItem1});
+            this.mENU2ToolStripMenuItem.Name = "mENU2ToolStripMenuItem";
+            this.mENU2ToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.mENU2ToolStripMenuItem.Text = "MENU 2";
+            // 
+            // dESCARGARToolStripMenuItem1
+            // 
+            this.dESCARGARToolStripMenuItem1.Name = "dESCARGARToolStripMenuItem1";
+            this.dESCARGARToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dESCARGARToolStripMenuItem1.Text = "DESCARGAR";
+            this.dESCARGARToolStripMenuItem1.Click += new System.EventHandler(this.dESCARGARToolStripMenuItem1_Click);
+            // 
+            // bUSQSECUENCIALToolStripMenuItem
+            // 
+            this.bUSQSECUENCIALToolStripMenuItem.Name = "bUSQSECUENCIALToolStripMenuItem";
+            this.bUSQSECUENCIALToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.bUSQSECUENCIALToolStripMenuItem.Text = "BUSQ SECUENCIAL";
+            this.bUSQSECUENCIALToolStripMenuItem.Click += new System.EventHandler(this.bUSQSECUENCIALToolStripMenuItem_Click);
+            // 
+            // tODOIGUALToolStripMenuItem
+            // 
+            this.tODOIGUALToolStripMenuItem.Name = "tODOIGUALToolStripMenuItem";
+            this.tODOIGUALToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.tODOIGUALToolStripMenuItem.Text = "TODO IGUAL?";
+            this.tODOIGUALToolStripMenuItem.Click += new System.EventHandler(this.tODOIGUALToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(516, 323);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -151,6 +251,17 @@
         private System.Windows.Forms.ToolStripMenuItem cARGARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dESCARGARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oRDENARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tRANSPUESTAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cARGAR1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cARGAR2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pROMEDIOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mAYORToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fRECUENCIAToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.ToolStripMenuItem mENU2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dESCARGARToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem bUSQSECUENCIALToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tODOIGUALToolStripMenuItem;
     }
 }
 
