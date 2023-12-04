@@ -7,3 +7,12 @@ C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\avance de matriz\obj\Debug\av
 C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\avance de matriz\obj\Debug\avance de matriz.csproj.GenerateResource.Cache
 C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\avance de matriz\obj\Debug\avance de matriz.exe
 C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\avance de matriz\obj\Debug\avance de matriz.pdb
+C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\3 avance matriz\bin\Debug\avance de matriz.exe.config
+C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\3 avance matriz\obj\Debug\avance de matriz.exe
+C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\3 avance matriz\obj\Debug\avance de matriz.pdb
+C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\3 avance matriz\bin\Debug\avance de matriz.exe
+C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\3 avance matriz\bin\Debug\avance de matriz.pdb
+C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\3 avance matriz\obj\Debug\avance de matriz.csprojResolveAssemblyReference.cache
+C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\3 avance matriz\obj\Debug\avance_de_matriz.Form1.resources
+C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\3 avance matriz\obj\Debug\avance_de_matriz.Properties.Resources.resources
+C:\Users\MIGUEL\Desktop\UNIVERSITY\MOLLO PROGRAM 1\3 avance matriz\obj\Debug\avance de matriz.csproj.GenerateResource.Cache
