@@ -500,6 +500,37 @@ namespace avance_de_matriz
                     if (mayfil(d) < mayfil(p))
                         interfils(d, p);
         }
+        public void ex_interfilsporCOL(int nc)
+        {
+            int p, d;
+            for (p = 1; p <= f - 1; p++)
+                for (d = p + 1; d <= f; d++)
+                    if (x[p,nc] > x[d, nc])
+                        interfils(d, p);
+        }
+        public void ex_interfilsporNELEMDISTINTOS()
+        {
+            int p, d;
+            for (p = 1; p <= f - 1; p++)
+                for (d = p + 1; d <= f; d++)
+                    if (cantelemdifFIL(d) > cantelemdifFIL(p))
+                        interfils(d, p);
+        }
+        public int cantelemdifFIL(int nf)
+        {
+            int i = 1, cont = 0,elem;
+            ordfil(nf);
+            while (i <= f)
+            {
+                elem = x[nf, i];
+                while(x[nf, i]==elem)
+                {
+                   i++;
+                }
+                cont++;
+            }
+            return cont;
+        }
         public void intercols(int c1, int c2)
         {
             for (int f1 = 1; f1 <= f; f1++)
@@ -935,13 +966,277 @@ namespace avance_de_matriz
         }
         public void ordDS1()
         {
-            int fp,cp,fd,cd;
+            int fp, fd;
             for (fp = 1; fp < f; fp++)
-                for (cp = c; cp >= 1; cp--)
-                    for (fd = 1; fd < f; fd++)
-                        for (cd = c; cd >= 1; cd--)
-                            if (x[fp,cp] < x[fd, cd])
-                        intercambio(fp, cp, fd, cd);
+                for (fd = fp + 1; fd <= f; fd++)
+                    if (x[fd, f - fd + 1] > x[fp, f - fp + 1])
+                        intercambio(fd, f - fd + 1, fp, f - fp + 1);
         }
-    }       
- }
+        public void ordDS2()
+        {
+            int fp, fd;
+            for (fp = 1; fp < f; fp++)
+                for (fd = fp + 1; fd <= f; fd++)
+                    if (x[fd, f - fd + 1] < x[fp, f - fp + 1])
+                        intercambio(fd, f - fd + 1, fp, f - fp + 1);
+        }
+        
+        public int sumaDIGprincipal()
+        {
+            int s=0, i, j;
+            for (i = 1; i <= f; i++)
+                for (j = 1; j <= c; j++)
+                    if (i == j)
+                        s = s + x[i, j];
+            return s;
+        }
+        public int sumaDIGsecun()
+        {
+            int s = 0, i, j;
+            for (i = 1; i <= f; i++)
+                for (j = 1; j <= c; j++)
+                    if (i + j == f + 1)
+                        s = s + x[i, j];
+            return s;
+        }
+        public void transpuestatriglar()
+        {
+            for (int fp = 2; fp <= f; fp++)
+                for (int cp = 1; cp <= fp - 1; cp++)
+                    intercambio(fp, cp, cp, fp);
+        }
+        public void cargarv(ref vector v1)
+        {
+            int fp, cp;
+            for (fp = 2; fp <= f; fp++)
+                for (cp = 1; cp <= fp - 1; cp++)
+                    v1.cargar_1_x_1(x[fp, cp]);
+        }
+        public void descargav(vector v1)
+        {
+            int fp, cp, i = 0;
+            for(fp=2;fp<=f;fp++)
+                for(cp=1;cp<=fp-1;cp++)
+                {
+                    i++;
+                    x[fp, cp] = v1.retornar_Elemto(i);
+                }
+        }
+        public void triordvector(ref vector v1)
+        {
+            cargarv(ref v1);
+            v1.ordinamiento_intercambio();
+            descargav(v1);
+        }
+        //PRACTICA PARA EL EXAMEN-------------||||||||||||||||||||||||------------------
+        public void ordencolsconRg(int af,int bf,int ac,int bc)
+        {
+            int fp, cp, fd, cd;
+            for (cp = ac; cp <= bc; cp++)
+                for (fp = af; fp <= bf; fp++)
+                    for (cd = ac; cd <= bc; cd++)
+                        for (fd = af; fd <= bf; fd++)
+                            if (x[fd, cd] > x[fp, cp])
+                                intercambio(fp, cp, fd, cd);
+        }
+ 
+       public void exam_ordTIDsegmparimpar()
+        {
+            int pf, pc, df, dc, ic;
+            NEnt n1 = new NEnt();
+            NEnt n2 = new NEnt();
+            for (pf = f; pf >= 2; pf--)
+                for (pc = f-pf+2; pc <= c; pc++)
+                    for (df = pf; df >= 2; df--)
+                    {
+                        if (pf == df)
+                            ic = pc;
+                        else
+                            ic = f - df + 2;
+                        for (dc = ic; dc <= c; dc++)
+                        {
+                            n1.Cargar(x[pf, pc]);
+                            n2.Cargar(x[df, dc]);
+                            if (n2.verifpar() && !n1.verifpar() ||
+                                n2.verifpar() && n1.verifpar() && x[df, dc] < x[pf, pc] ||
+                                !n2.verifpar() && !n1.verifpar() && x[df, dc] < x[pf, pc])
+                                intercambio(df, dc, pf, pc);
+                        }
+                    }
+        
+    }
+        public int cantprimosfil(int nf)
+        {
+            NEnt n = new NEnt();
+            int i, s = 0;
+            for (i = 1; i <= c; i++)
+            {
+                n.Cargar(x[nf, i]);
+                if (n.VerifPri())
+                    s++;
+            }
+            return s;
+        }
+        public int frecdefila(int nf)
+        {
+            NEnt n = new NEnt();
+            int i, s = 0;
+            for (i = 1; i <= c; i++)
+            {
+                n.Cargar(x[nf, i]);
+                if (n.VerifPri())
+                    s++;
+            }
+            return s;
+        }
+        public int cantprimoscol(int nc)
+        {
+            NEnt n = new NEnt();
+            int i, s = 0;
+            for (i = 1; i <= f; i++)
+            {
+                n.Cargar(x[i,nc]);
+                if (n.VerifPri())
+                    s++;
+            }
+            return s;
+        }
+
+        public void exa_interfilsmayprim()
+        {
+            int p, d;
+            for (p = 1; p <= f - 1; p++)
+                for (d = p + 1; d <= f; d++)
+                    if (cantprimosfil(p) > cantprimosfil(d))
+                        interfils(d, p);
+        }
+        public void exa_intercolsmayprim()
+        {
+            int p, d;
+            for (p = 1; p <= c - 1; p++)
+                for (d = p + 1; d <= c; d++)
+                    if (cantprimoscol(p) > cantprimoscol(d))
+                        intercols(d, p);
+        }
+        public void ordenconRGinterparimpar(int af, int bf, int ac, int bc)
+        {
+            int fp, cp, fd, cd;
+            for (cp = ac; cp <= bc; cp++)
+                for (fp = af; fp <= bf; fp++)
+                    for (cd = ac; cd <= bc; cd++)
+                        for (fd = af; fd <= bf; fd++)
+                            if (x[fd, cd] > x[fp, cp])
+                                intercambio(fp, cp, fd, cd);
+        }
+        public void ex_intercalarparNparconRG(int af, int bf, int ac, int bc)
+        {
+            int fp, cp, fd, cd, if1;
+            bool b = true;
+            NEnt n1 = new NEnt();
+            NEnt n2 = new NEnt();
+            for (cp = ac; cp <= bc; cp++)
+                for (fp = bf; fp >= af; fp--)
+                {
+                    if (b)
+                        for (cd = cp; cd <= bc; cd++)
+                        {
+                            if (cd == cp)
+                                if1 = fp;
+                            else
+                                if1 = bf;
+                            for (fd = if1; fd >= 1; fd--)
+                            {
+                                n1.Cargar(x[fd, cd]);
+                                n2.Cargar(x[fp, cp]);
+                                if (n1.verifpar() && !n2.verifpar() ||
+                                    n1.verifpar() && n2.verifpar() && x[fd, cd] < x[fp, cp] ||
+                                    !n1.verifpar() && !n2.verifpar() && x[fd, cd] < x[fp, cp])
+                                    intercambio(fd, cd, fp, cp);
+                            }
+                        }
+                    else
+                        for (cd = cp; cd <= bc; cd++)
+                        {
+                            if (cd == cp)
+                                if1 = fp;
+                            else
+                                if1 = bf;
+                            for (fd = if1; fd >= 1; fd--)
+                            {
+                                n1.Cargar(x[fd, cd]);
+                                n2.Cargar(x[fp, cp]);
+                                if (!n1.verifpar() && n2.verifpar() ||
+                                    !n1.verifpar() && !n2.verifpar() && x[fd, cd] < x[fp, cp] ||
+                                    n1.verifpar() && n2.verifpar() && x[fd, cd] < x[fp, cp])
+                                    intercambio(fd, cd, fp, cp);
+                            }
+                        }
+                    b = !b;
+                }
+        }
+        public int frecelemporfila(int nf,int dato)
+        {
+            int cont = 0;
+            for (int i = 1; i <= c; i++) 
+            {
+                if (x[nf, i] == dato)
+                    cont++;
+            }
+            return cont;
+        }
+        public int obtenerelemmayfrec(int nf)
+        {
+            int dato1, dato2, cant1, cant2;
+            dato1 = x[nf, 1];
+            cant1 = frecelemporfila(nf, dato1);
+            for (int i = 2; i <= c; i++) 
+            {
+                dato2 = x[nf, i];
+                cant2 = frecelemporfila(nf, dato2);
+                if (cant2 > cant1)
+                {
+                    dato1 = dato2;
+                    cant1 = cant2;
+                }
+            }
+            return dato1;
+        }
+        public void ex_numconmayorfrec()
+        {
+            int dato, cant;
+            for (int i = 1; i <= f; i++)
+            {
+                dato = obtenerelemmayfrec(i);
+                cant = frecelemporfila(i, dato);
+                x[i, c + 1] = dato;
+                x[i, c + 2] = cant;
+            }
+            c = c + 2;
+        }
+        public void ordenacolsmenAmay(int pc,int a, int b)
+        {
+            int d1, d2;
+            for (int i = a; i < b; i++)
+            {
+                d1 = x[i, pc];
+                for (int j = i + 1; j <= b; j++)
+                {
+                    d2 = x[j, pc];
+                    if (d2 < d1)
+                    {
+                        intercambio(i, pc, j, pc);
+                    }
+                }
+            }
+        }
+        public void ex_ordcolsTID()
+        {
+            int a = 2;
+            for (int i = c; i >= 2; i--)
+            {
+                ordenacolsmenAmay(i, a, f);
+                a++;
+            }
+        }
+    }
+}

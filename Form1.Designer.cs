@@ -33,7 +33,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mASOPERACIONESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mAYORFILASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +49,12 @@
             this.fILASMENORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cOLSMAYORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cOLSMENORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iNTERCALARMATRIZToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iNTERCALARPARNOPARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pRIMONOPRIMOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fIBONACCIYNOFIBONACCIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cAPICUANOCAPICUAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRDUTILIZANDOVECTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cARGARAPIDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cARGARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dESCARGARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,6 +72,7 @@
             this.pARIMPARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pRIMONOPRIMOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tRANSPUESTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tRANSPUENTATRIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cARGAR1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cARGAR2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pROMEDIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,7 +80,6 @@
             this.mENORToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.fRECUENCIAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bUSQSECUENCIALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tODOIGUALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hALLARPOSICIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hALLARPOS2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tODASLASPOSICToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,8 +110,12 @@
             this.oRDDIAGONALSecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aCSEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dESCENDENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sUMADIAGONALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pRINCIPALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sECUNDARIAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mENU2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dESCARGARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cARGARRANDOMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sERIESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pARESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iMPARESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -112,17 +124,16 @@
             this.sERIEENTToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sERIEENT3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sERIEENT4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.sUMADIAGONALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pRINCIPALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sECUNDARIAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iNTERCALARMATRIZToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iNTERCALARPARNOPARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pRIMONOPRIMOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fIBONACCIYNOFIBONACCIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cAPICUANOCAPICUAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.pRACTICASPARAEXAMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRDCONRANGOMATRIZToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRDTIDSEGPARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRDPORNPRIMOSDEMENAMAYToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRDCONRGMTSEGMTPIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nUMCONMAYORFRECPORFILAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRDCOLSTIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iNTERFILSXCOLMNAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRDXCANTDEELEMDIFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,7 +162,7 @@
             this.textBox3.BackColor = System.Drawing.Color.Ivory;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(160, 65);
+            this.textBox3.Location = new System.Drawing.Point(188, 65);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(56, 20);
             this.textBox3.TabIndex = 2;
@@ -161,7 +172,7 @@
             this.textBox4.BackColor = System.Drawing.Color.Ivory;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(237, 65);
+            this.textBox4.Location = new System.Drawing.Point(277, 65);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(53, 20);
             this.textBox4.TabIndex = 3;
@@ -171,25 +182,44 @@
             this.textBox5.BackColor = System.Drawing.Color.Ivory;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(12, 100);
+            this.textBox5.Location = new System.Drawing.Point(9, 100);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(278, 135);
+            this.textBox5.Size = new System.Drawing.Size(321, 184);
             this.textBox5.TabIndex = 4;
             // 
-            // menuStrip1
+            // textBox6
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Goldenrod;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mENUToolStripMenuItem,
-            this.mENUSGTEToolStripMenuItem,
-            this.mENU2ToolStripMenuItem,
-            this.sERIESToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(609, 24);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
+            this.textBox6.BackColor = System.Drawing.Color.Ivory;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(9, 314);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(278, 20);
+            this.textBox6.TabIndex = 6;
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.Color.Ivory;
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(382, 100);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(319, 184);
+            this.textBox7.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.button1.Location = new System.Drawing.Point(12, 340);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "BORRAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // mENUToolStripMenuItem
             // 
@@ -207,7 +237,6 @@
             this.mAYORToolStripMenuItem,
             this.fRECUENCIAToolStripMenuItem,
             this.bUSQSECUENCIALToolStripMenuItem,
-            this.tODOIGUALToolStripMenuItem,
             this.hALLARPOSICIONToolStripMenuItem,
             this.hALLARPOS2ToolStripMenuItem,
             this.tODASLASPOSICToolStripMenuItem});
@@ -223,7 +252,8 @@
             this.vERIFORDASCToolStripMenuItem,
             this.vERORDASCRANGOToolStripMenuItem,
             this.iNTERCALARToolStripMenuItem,
-            this.iNTERCALARMATRIZToolStripMenuItem});
+            this.iNTERCALARMATRIZToolStripMenuItem,
+            this.oRDUTILIZANDOVECTToolStripMenuItem});
             this.mASOPERACIONESToolStripMenuItem.Name = "mASOPERACIONESToolStripMenuItem";
             this.mASOPERACIONESToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.mASOPERACIONESToolStripMenuItem.Text = "MAS OPERACIONES";
@@ -311,6 +341,52 @@
             this.cOLSMENORESToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.cOLSMENORESToolStripMenuItem.Text = "COLS DESCENDENTE";
             this.cOLSMENORESToolStripMenuItem.Click += new System.EventHandler(this.cOLSMENORESToolStripMenuItem_Click);
+            // 
+            // iNTERCALARMATRIZToolStripMenuItem
+            // 
+            this.iNTERCALARMATRIZToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.iNTERCALARPARNOPARToolStripMenuItem,
+            this.pRIMONOPRIMOToolStripMenuItem1,
+            this.fIBONACCIYNOFIBONACCIToolStripMenuItem,
+            this.cAPICUANOCAPICUAToolStripMenuItem});
+            this.iNTERCALARMATRIZToolStripMenuItem.Name = "iNTERCALARMATRIZToolStripMenuItem";
+            this.iNTERCALARMATRIZToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.iNTERCALARMATRIZToolStripMenuItem.Text = "INTERCALAR MATRIZ";
+            // 
+            // iNTERCALARPARNOPARToolStripMenuItem
+            // 
+            this.iNTERCALARPARNOPARToolStripMenuItem.Name = "iNTERCALARPARNOPARToolStripMenuItem";
+            this.iNTERCALARPARNOPARToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.iNTERCALARPARNOPARToolStripMenuItem.Text = "PAR NO PAR";
+            this.iNTERCALARPARNOPARToolStripMenuItem.Click += new System.EventHandler(this.iNTERCALARPARNOPARToolStripMenuItem_Click_1);
+            // 
+            // pRIMONOPRIMOToolStripMenuItem1
+            // 
+            this.pRIMONOPRIMOToolStripMenuItem1.Name = "pRIMONOPRIMOToolStripMenuItem1";
+            this.pRIMONOPRIMOToolStripMenuItem1.Size = new System.Drawing.Size(220, 22);
+            this.pRIMONOPRIMOToolStripMenuItem1.Text = "PRIMO NO PRIMO";
+            this.pRIMONOPRIMOToolStripMenuItem1.Click += new System.EventHandler(this.pRIMONOPRIMOToolStripMenuItem1_Click);
+            // 
+            // fIBONACCIYNOFIBONACCIToolStripMenuItem
+            // 
+            this.fIBONACCIYNOFIBONACCIToolStripMenuItem.Name = "fIBONACCIYNOFIBONACCIToolStripMenuItem";
+            this.fIBONACCIYNOFIBONACCIToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.fIBONACCIYNOFIBONACCIToolStripMenuItem.Text = "FIBONACCI NO FIBONACCI";
+            this.fIBONACCIYNOFIBONACCIToolStripMenuItem.Click += new System.EventHandler(this.fIBONACCIYNOFIBONACCIToolStripMenuItem_Click);
+            // 
+            // cAPICUANOCAPICUAToolStripMenuItem
+            // 
+            this.cAPICUANOCAPICUAToolStripMenuItem.Name = "cAPICUANOCAPICUAToolStripMenuItem";
+            this.cAPICUANOCAPICUAToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.cAPICUANOCAPICUAToolStripMenuItem.Text = "CAPICUA NO CAPICUA";
+            this.cAPICUANOCAPICUAToolStripMenuItem.Click += new System.EventHandler(this.cAPICUANOCAPICUAToolStripMenuItem_Click);
+            // 
+            // oRDUTILIZANDOVECTToolStripMenuItem
+            // 
+            this.oRDUTILIZANDOVECTToolStripMenuItem.Name = "oRDUTILIZANDOVECTToolStripMenuItem";
+            this.oRDUTILIZANDOVECTToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.oRDUTILIZANDOVECTToolStripMenuItem.Text = "ORD UTILIZANDO VECT";
+            this.oRDUTILIZANDOVECTToolStripMenuItem.Click += new System.EventHandler(this.oRDUTILIZANDOVECTToolStripMenuItem_Click);
             // 
             // cARGARAPIDAToolStripMenuItem
             // 
@@ -435,10 +511,19 @@
             // 
             // tRANSPUESTAToolStripMenuItem
             // 
+            this.tRANSPUESTAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tRANSPUENTATRIToolStripMenuItem});
             this.tRANSPUESTAToolStripMenuItem.Name = "tRANSPUESTAToolStripMenuItem";
             this.tRANSPUESTAToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.tRANSPUESTAToolStripMenuItem.Text = "TRANSPUESTA";
             this.tRANSPUESTAToolStripMenuItem.Click += new System.EventHandler(this.tRANSPUESTAToolStripMenuItem_Click);
+            // 
+            // tRANSPUENTATRIToolStripMenuItem
+            // 
+            this.tRANSPUENTATRIToolStripMenuItem.Name = "tRANSPUENTATRIToolStripMenuItem";
+            this.tRANSPUENTATRIToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.tRANSPUENTATRIToolStripMenuItem.Text = "TRANSPUENTA TRI";
+            this.tRANSPUENTATRIToolStripMenuItem.Click += new System.EventHandler(this.tRANSPUENTATRIToolStripMenuItem_Click);
             // 
             // cARGAR1ToolStripMenuItem
             // 
@@ -492,13 +577,6 @@
             this.bUSQSECUENCIALToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.bUSQSECUENCIALToolStripMenuItem.Text = "BUSQ SECUENCIAL";
             this.bUSQSECUENCIALToolStripMenuItem.Click += new System.EventHandler(this.bUSQSECUENCIALToolStripMenuItem_Click);
-            // 
-            // tODOIGUALToolStripMenuItem
-            // 
-            this.tODOIGUALToolStripMenuItem.Name = "tODOIGUALToolStripMenuItem";
-            this.tODOIGUALToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.tODOIGUALToolStripMenuItem.Text = "TODO IGUAL?";
-            this.tODOIGUALToolStripMenuItem.Click += new System.EventHandler(this.tODOIGUALToolStripMenuItem_Click);
             // 
             // hALLARPOSICIONToolStripMenuItem
             // 
@@ -646,6 +724,7 @@
             this.iNFDERECHAToolStripMenuItem2.Name = "iNFDERECHAToolStripMenuItem2";
             this.iNFDERECHAToolStripMenuItem2.Size = new System.Drawing.Size(157, 22);
             this.iNFDERECHAToolStripMenuItem2.Text = "INF DERECHA";
+            this.iNFDERECHAToolStripMenuItem2.Click += new System.EventHandler(this.iNFDERECHAToolStripMenuItem2_Click);
             // 
             // iNTERTRIANGULARToolStripMenuItem
             // 
@@ -726,11 +805,36 @@
             this.dESCENDENTEToolStripMenuItem.Name = "dESCENDENTEToolStripMenuItem";
             this.dESCENDENTEToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.dESCENDENTEToolStripMenuItem.Text = "DESCENDENTE";
+            this.dESCENDENTEToolStripMenuItem.Click += new System.EventHandler(this.dESCENDENTEToolStripMenuItem_Click);
+            // 
+            // sUMADIAGONALToolStripMenuItem
+            // 
+            this.sUMADIAGONALToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pRINCIPALToolStripMenuItem,
+            this.sECUNDARIAToolStripMenuItem});
+            this.sUMADIAGONALToolStripMenuItem.Name = "sUMADIAGONALToolStripMenuItem";
+            this.sUMADIAGONALToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.sUMADIAGONALToolStripMenuItem.Text = "SUMA DIAGONAL";
+            // 
+            // pRINCIPALToolStripMenuItem
+            // 
+            this.pRINCIPALToolStripMenuItem.Name = "pRINCIPALToolStripMenuItem";
+            this.pRINCIPALToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.pRINCIPALToolStripMenuItem.Text = "PRINCIPAL";
+            this.pRINCIPALToolStripMenuItem.Click += new System.EventHandler(this.pRINCIPALToolStripMenuItem_Click);
+            // 
+            // sECUNDARIAToolStripMenuItem
+            // 
+            this.sECUNDARIAToolStripMenuItem.Name = "sECUNDARIAToolStripMenuItem";
+            this.sECUNDARIAToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.sECUNDARIAToolStripMenuItem.Text = "SECUNDARIA";
+            this.sECUNDARIAToolStripMenuItem.Click += new System.EventHandler(this.sECUNDARIAToolStripMenuItem_Click);
             // 
             // mENU2ToolStripMenuItem
             // 
             this.mENU2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dESCARGARToolStripMenuItem1});
+            this.dESCARGARToolStripMenuItem1,
+            this.cARGARRANDOMToolStripMenuItem});
             this.mENU2ToolStripMenuItem.Name = "mENU2ToolStripMenuItem";
             this.mENU2ToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.mENU2ToolStripMenuItem.Text = "MENU 2";
@@ -738,9 +842,15 @@
             // dESCARGARToolStripMenuItem1
             // 
             this.dESCARGARToolStripMenuItem1.Name = "dESCARGARToolStripMenuItem1";
-            this.dESCARGARToolStripMenuItem1.Size = new System.Drawing.Size(140, 22);
+            this.dESCARGARToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
             this.dESCARGARToolStripMenuItem1.Text = "DESCARGAR";
             this.dESCARGARToolStripMenuItem1.Click += new System.EventHandler(this.dESCARGARToolStripMenuItem1_Click);
+            // 
+            // cARGARRANDOMToolStripMenuItem
+            // 
+            this.cARGARRANDOMToolStripMenuItem.Name = "cARGARRANDOMToolStripMenuItem";
+            this.cARGARRANDOMToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.cARGARRANDOMToolStripMenuItem.Text = "CARGAR RANDOM";
             // 
             // sERIESToolStripMenuItem
             // 
@@ -805,105 +915,98 @@
             this.sERIEENT4ToolStripMenuItem.Text = "SERIE ENT 4";
             this.sERIEENT4ToolStripMenuItem.Click += new System.EventHandler(this.sERIEENT4ToolStripMenuItem_Click);
             // 
-            // textBox6
+            // menuStrip1
             // 
-            this.textBox6.BackColor = System.Drawing.Color.Ivory;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(12, 255);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(278, 20);
-            this.textBox6.TabIndex = 6;
+            this.menuStrip1.BackColor = System.Drawing.Color.Goldenrod;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mENUToolStripMenuItem,
+            this.mENUSGTEToolStripMenuItem,
+            this.mENU2ToolStripMenuItem,
+            this.sERIESToolStripMenuItem,
+            this.pRACTICASPARAEXAMToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(713, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // textBox7
+            // pRACTICASPARAEXAMToolStripMenuItem
             // 
-            this.textBox7.BackColor = System.Drawing.Color.Ivory;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(307, 100);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(290, 135);
-            this.textBox7.TabIndex = 7;
+            this.pRACTICASPARAEXAMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.oRDCONRANGOMATRIZToolStripMenuItem,
+            this.oRDTIDSEGPARToolStripMenuItem,
+            this.oRDPORNPRIMOSDEMENAMAYToolStripMenuItem,
+            this.oRDCONRGMTSEGMTPIToolStripMenuItem,
+            this.nUMCONMAYORFRECPORFILAToolStripMenuItem,
+            this.oRDCOLSTIDToolStripMenuItem,
+            this.iNTERFILSXCOLMNAToolStripMenuItem,
+            this.oRDXCANTDEELEMDIFToolStripMenuItem});
+            this.pRACTICASPARAEXAMToolStripMenuItem.Name = "pRACTICASPARAEXAMToolStripMenuItem";
+            this.pRACTICASPARAEXAMToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+            this.pRACTICASPARAEXAMToolStripMenuItem.Text = "MODELOS EXAM";
             // 
-            // button1
+            // oRDCONRANGOMATRIZToolStripMenuItem
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.button1.Location = new System.Drawing.Point(31, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "BORRAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.oRDCONRANGOMATRIZToolStripMenuItem.Name = "oRDCONRANGOMATRIZToolStripMenuItem";
+            this.oRDCONRANGOMATRIZToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.oRDCONRANGOMATRIZToolStripMenuItem.Text = "ORD CON RANGO MATRIZ";
+            this.oRDCONRANGOMATRIZToolStripMenuItem.Click += new System.EventHandler(this.oRDCONRANGOMATRIZToolStripMenuItem_Click);
             // 
-            // sUMADIAGONALToolStripMenuItem
+            // oRDTIDSEGPARToolStripMenuItem
             // 
-            this.sUMADIAGONALToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pRINCIPALToolStripMenuItem,
-            this.sECUNDARIAToolStripMenuItem});
-            this.sUMADIAGONALToolStripMenuItem.Name = "sUMADIAGONALToolStripMenuItem";
-            this.sUMADIAGONALToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.sUMADIAGONALToolStripMenuItem.Text = "SUMA DIAGONAL";
+            this.oRDTIDSEGPARToolStripMenuItem.Name = "oRDTIDSEGPARToolStripMenuItem";
+            this.oRDTIDSEGPARToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.oRDTIDSEGPARToolStripMenuItem.Text = "ORD TID SEG PAR";
+            this.oRDTIDSEGPARToolStripMenuItem.Click += new System.EventHandler(this.oRDTIDSEGPARToolStripMenuItem_Click);
             // 
-            // pRINCIPALToolStripMenuItem
+            // oRDPORNPRIMOSDEMENAMAYToolStripMenuItem
             // 
-            this.pRINCIPALToolStripMenuItem.Name = "pRINCIPALToolStripMenuItem";
-            this.pRINCIPALToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pRINCIPALToolStripMenuItem.Text = "PRINCIPAL";
+            this.oRDPORNPRIMOSDEMENAMAYToolStripMenuItem.Name = "oRDPORNPRIMOSDEMENAMAYToolStripMenuItem";
+            this.oRDPORNPRIMOSDEMENAMAYToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.oRDPORNPRIMOSDEMENAMAYToolStripMenuItem.Text = "ORD POR N PRIMOS DE MEN A MAY (COLS)";
+            this.oRDPORNPRIMOSDEMENAMAYToolStripMenuItem.Click += new System.EventHandler(this.oRDPORNPRIMOSDEMENAMAYToolStripMenuItem_Click);
             // 
-            // sECUNDARIAToolStripMenuItem
+            // oRDCONRGMTSEGMTPIToolStripMenuItem
             // 
-            this.sECUNDARIAToolStripMenuItem.Name = "sECUNDARIAToolStripMenuItem";
-            this.sECUNDARIAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.sECUNDARIAToolStripMenuItem.Text = "SECUNDARIA";
+            this.oRDCONRGMTSEGMTPIToolStripMenuItem.Name = "oRDCONRGMTSEGMTPIToolStripMenuItem";
+            this.oRDCONRGMTSEGMTPIToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.oRDCONRGMTSEGMTPIToolStripMenuItem.Text = "ORD CON RG MT SEGMT P I";
+            this.oRDCONRGMTSEGMTPIToolStripMenuItem.Click += new System.EventHandler(this.oRDCONRGMTSEGMTPIToolStripMenuItem_Click);
             // 
-            // iNTERCALARMATRIZToolStripMenuItem
+            // nUMCONMAYORFRECPORFILAToolStripMenuItem
             // 
-            this.iNTERCALARMATRIZToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iNTERCALARPARNOPARToolStripMenuItem,
-            this.pRIMONOPRIMOToolStripMenuItem1,
-            this.fIBONACCIYNOFIBONACCIToolStripMenuItem,
-            this.cAPICUANOCAPICUAToolStripMenuItem});
-            this.iNTERCALARMATRIZToolStripMenuItem.Name = "iNTERCALARMATRIZToolStripMenuItem";
-            this.iNTERCALARMATRIZToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
-            this.iNTERCALARMATRIZToolStripMenuItem.Text = "INTERCALAR MATRIZ";
+            this.nUMCONMAYORFRECPORFILAToolStripMenuItem.Name = "nUMCONMAYORFRECPORFILAToolStripMenuItem";
+            this.nUMCONMAYORFRECPORFILAToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.nUMCONMAYORFRECPORFILAToolStripMenuItem.Text = "NUM CON MAYOR FREC POR FILA";
+            this.nUMCONMAYORFRECPORFILAToolStripMenuItem.Click += new System.EventHandler(this.nUMCONMAYORFRECPORFILAToolStripMenuItem_Click);
             // 
-            // iNTERCALARPARNOPARToolStripMenuItem
+            // oRDCOLSTIDToolStripMenuItem
             // 
-            this.iNTERCALARPARNOPARToolStripMenuItem.Name = "iNTERCALARPARNOPARToolStripMenuItem";
-            this.iNTERCALARPARNOPARToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.iNTERCALARPARNOPARToolStripMenuItem.Text = "PAR NO PAR";
-            this.iNTERCALARPARNOPARToolStripMenuItem.Click += new System.EventHandler(this.iNTERCALARPARNOPARToolStripMenuItem_Click_1);
+            this.oRDCOLSTIDToolStripMenuItem.Name = "oRDCOLSTIDToolStripMenuItem";
+            this.oRDCOLSTIDToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.oRDCOLSTIDToolStripMenuItem.Text = "ORD COLS TID ";
+            this.oRDCOLSTIDToolStripMenuItem.Click += new System.EventHandler(this.oRDCOLSTIDToolStripMenuItem_Click);
             // 
-            // pRIMONOPRIMOToolStripMenuItem1
+            // iNTERFILSXCOLMNAToolStripMenuItem
             // 
-            this.pRIMONOPRIMOToolStripMenuItem1.Name = "pRIMONOPRIMOToolStripMenuItem1";
-            this.pRIMONOPRIMOToolStripMenuItem1.Size = new System.Drawing.Size(220, 22);
-            this.pRIMONOPRIMOToolStripMenuItem1.Text = "PRIMO NO PRIMO";
-            this.pRIMONOPRIMOToolStripMenuItem1.Click += new System.EventHandler(this.pRIMONOPRIMOToolStripMenuItem1_Click);
+            this.iNTERFILSXCOLMNAToolStripMenuItem.Name = "iNTERFILSXCOLMNAToolStripMenuItem";
+            this.iNTERFILSXCOLMNAToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.iNTERFILSXCOLMNAToolStripMenuItem.Text = "INTER FILS X COLMNA";
+            this.iNTERFILSXCOLMNAToolStripMenuItem.Click += new System.EventHandler(this.iNTERFILSXCOLMNAToolStripMenuItem_Click);
             // 
-            // fIBONACCIYNOFIBONACCIToolStripMenuItem
+            // oRDXCANTDEELEMDIFToolStripMenuItem
             // 
-            this.fIBONACCIYNOFIBONACCIToolStripMenuItem.Name = "fIBONACCIYNOFIBONACCIToolStripMenuItem";
-            this.fIBONACCIYNOFIBONACCIToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.fIBONACCIYNOFIBONACCIToolStripMenuItem.Text = "FIBONACCI NO FIBONACCI";
-            this.fIBONACCIYNOFIBONACCIToolStripMenuItem.Click += new System.EventHandler(this.fIBONACCIYNOFIBONACCIToolStripMenuItem_Click);
-            // 
-            // cAPICUANOCAPICUAToolStripMenuItem
-            // 
-            this.cAPICUANOCAPICUAToolStripMenuItem.Name = "cAPICUANOCAPICUAToolStripMenuItem";
-            this.cAPICUANOCAPICUAToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.cAPICUANOCAPICUAToolStripMenuItem.Text = "CAPICUA NO CAPICUA";
-            this.cAPICUANOCAPICUAToolStripMenuItem.Click += new System.EventHandler(this.cAPICUANOCAPICUAToolStripMenuItem_Click);
+            this.oRDXCANTDEELEMDIFToolStripMenuItem.Name = "oRDXCANTDEELEMDIFToolStripMenuItem";
+            this.oRDXCANTDEELEMDIFToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.oRDXCANTDEELEMDIFToolStripMenuItem.Text = "ORD X CANT DE ELEM DIF";
+            this.oRDXCANTDEELEMDIFToolStripMenuItem.Click += new System.EventHandler(this.oRDXCANTDEELEMDIFToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
-            this.ClientSize = new System.Drawing.Size(609, 351);
+            this.ClientSize = new System.Drawing.Size(713, 375);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -932,39 +1035,32 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem mENUToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mASOPERACIONESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mAYORFILASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mAYORCOLUMNASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDCOLUMNASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDFILASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vERIFORDASCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vERORDASCRANGOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iNTERCALARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fILASMAYORESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fILASMENORESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cOLSMAYORESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cOLSMENORESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iNTERCALARMATRIZToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iNTERCALARPARNOPARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pRIMONOPRIMOToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem fIBONACCIYNOFIBONACCIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cAPICUANOCAPICUAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cARGARAPIDAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cARGARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dESCARGARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oRDENARToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tRANSPUESTAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cARGAR1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pROMEDIOToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mAYORToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fRECUENCIAToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ToolStripMenuItem mENU2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dESCARGARToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem bUSQSECUENCIALToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tODOIGUALToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ToolStripMenuItem hALLARPOSICIONToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hALLARPOS2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tODASLASPOSICToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cARGARAPIDAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sERIESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pARESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iMPARESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fIBONACCIToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mASOPERACIONESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mAYORFILASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem oRDCOLUMNASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vERIFORDASCToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vERORDASCRANGOToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sERIEENTToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sERIEENTToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem sERIEENT3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sERIEENT4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDENAR1ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem oRDENAR2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oRDENAR3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oRDENAR4ToolStripMenuItem;
@@ -973,28 +1069,24 @@
         private System.Windows.Forms.ToolStripMenuItem oRDENAR2ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem oRDENAR3ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem oRDENAR4ToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem oRDENAR1ToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem mENORToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cARGAR2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sEGMENTARToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pARIMPARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pRIMONOPRIMOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tRANSPUESTAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cARGAR1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cARGAR2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pROMEDIOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mAYORToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mENORToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem fRECUENCIAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bUSQSECUENCIALToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hALLARPOSICIONToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hALLARPOS2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tODASLASPOSICToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mENUSGTEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oRDTRIANGULARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sUPDERECHAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iNFIZQUIERDAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sEGMTRIANGULARToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sUPDERECHAToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem iNTERTRIANGULARToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sUPDERECHAToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem oRDDIAGONALPriToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aSENDENTEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dESENDENTEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem oRDDIAGONALSecToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aCSEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dESCENDENTEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mAYORCOLUMNASToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem sUPIZQUIERDAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iNFDERECHAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oRDTRIANGULARDESCToolStripMenuItem;
@@ -1002,25 +1094,47 @@
         private System.Windows.Forms.ToolStripMenuItem iNFIZQUIERDAToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sUPIZQUIERDAToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem iNFDERECHAToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem sEGMTRIANGULARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sUPDERECHAToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem iNFIZQUIERDAToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem sUPIZQUIERDAToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem iNFDERECHAToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem iNTERTRIANGULARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sUPDERECHAToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem iNFIZQUIERDAToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem sUPIZQUIERDAToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem iNFDERECHAToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem oRDFILASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iNTERCALARToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fILASMAYORESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fILASMENORESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cOLSMAYORESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cOLSMENORESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDDIAGONALPriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aSENDENTEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dESENDENTEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDDIAGONALSecToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aCSEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dESCENDENTEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sUMADIAGONALToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pRINCIPALToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sECUNDARIAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iNTERCALARMATRIZToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iNTERCALARPARNOPARToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pRIMONOPRIMOToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem fIBONACCIYNOFIBONACCIToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cAPICUANOCAPICUAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mENU2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dESCARGARToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cARGARRANDOMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sERIESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pARESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iMPARESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fIBONACCIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sERIEENTToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sERIEENTToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem sERIEENT3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sERIEENT4ToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem tRANSPUENTATRIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDUTILIZANDOVECTToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pRACTICASPARAEXAMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDCONRANGOMATRIZToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDTIDSEGPARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDPORNPRIMOSDEMENAMAYToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDCONRGMTSEGMTPIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nUMCONMAYORFRECPORFILAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDCOLSTIDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iNTERFILSXCOLMNAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oRDXCANTDEELEMDIFToolStripMenuItem;
     }
 }

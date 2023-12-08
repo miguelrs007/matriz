@@ -13,6 +13,7 @@ namespace avance_de_matriz
     public partial class Form1 : Form
     {
         matriz x1, x2, x3;
+        vector v1;
 
         private void cARGARToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -338,6 +339,78 @@ namespace avance_de_matriz
             x1.intercalarcapicuaNOcap(); textBox7.Text = x1.descargar();
         }
 
+        private void pRINCIPALToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox6.Text = string.Concat(x1.sumaDIGprincipal());
+        }
+
+        private void sECUNDARIAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox6.Text = string.Concat(x1.sumaDIGsecun());
+        }
+
+        private void tRANSPUENTATRIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.transpuestatriglar(); textBox7.Text = x1.descargar();
+        }
+
+        private void dESCENDENTEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.ordDS2(); textBox7.Text = x1.descargar();
+        }
+
+        private void oRDUTILIZANDOVECTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.triordvector(ref v1); textBox7.Text = x1.descargar();
+        }
+
+        private void oRDCONRANGOMATRIZToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.ordencolsconRg(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text));
+            textBox7.Text = x1.descargar();
+        }
+
+        private void iNFDERECHAToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void oRDTIDSEGPARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.exam_ordTIDsegmparimpar(); textBox7.Text = x1.descargar();
+        }
+
+        private void oRDPORNPRIMOSDEMENAMAYToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.exa_intercolsmayprim(); textBox7.Text = x1.descargar();
+        }
+
+        private void oRDCONRGMTSEGMTPIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.ex_intercalarparNparconRG(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text));
+            textBox7.Text = x1.descargar();
+        }
+
+        private void nUMCONMAYORFRECPORFILAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.ex_numconmayorfrec(); textBox7.Text = x1.descargar();
+        }
+
+        private void oRDCOLSTIDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.ex_ordcolsTID(); textBox7.Text = x1.descargar();
+        }
+
+        private void iNTERFILSXCOLMNAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.ex_interfilsporCOL(int.Parse(textBox3.Text)); textBox7.Text = x1.descargar();
+        }
+
+        private void oRDXCANTDEELEMDIFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x1.ex_interfilsporNELEMDISTINTOS(); textBox7.Text = x1.descargar();
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -347,6 +420,7 @@ namespace avance_de_matriz
             x1 = new matriz();
             x2 = new matriz();
             x3 = new matriz();
+            v1 = new vector();
         }
     }
 }
